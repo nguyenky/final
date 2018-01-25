@@ -51,12 +51,12 @@ $(document).ready(function(){
 
 	// //---------------------
 
-	// $(".icon").hide();
+	$(".icon").hide();
 
     $(".btn").click(function(){
  //    	console.log(arrTimes);
  //    	// console.log(arrMinuteGoal.sort(sortNumberAsc));
- //    	addEvent();
+    	addEvent();
  //    	$(".btn").hide('slow');
  //    	$(".icon").show('slow');
  //    	var mainEvents = arrTimes.filter(time => time.event == true);
@@ -66,7 +66,7 @@ $(document).ready(function(){
 	// 	//   });
 	// 	// mainEnd();
 		
-        alert(2);
+        // alert(2);
         alert(goals);
     });
  //    function showMain(mainEvents){
@@ -93,7 +93,8 @@ $(document).ready(function(){
 	// 	});
  //    }
 
- //    function addEvent(){
+    function addEvent(){
+    	alert('add');
  //    	arrMinuteGoal.sort(sortNumberAsc).forEach(function(value){
 	//     	console.log(arrTimes[value]);
 	//     	arrTimes[value].event = true;
@@ -114,5 +115,5 @@ $(document).ready(function(){
 	//     });
 	//     arrTimes[90].event 		=true;
 	//     arrTimes[90].comment 	='End';
- //    }
+    }
 });
