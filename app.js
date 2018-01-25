@@ -57,41 +57,36 @@ $(document).ready(function(){
  //    	console.log(arrTimes);
  //    	// console.log(arrMinuteGoal.sort(sortNumberAsc));
     	addEvent();
- //    	$(".btn").hide('slow');
- //    	$(".icon").show('slow');
- //    	var mainEvents = arrTimes.filter(time => time.event == true);
- //        var test = showMain(mainEvents);
-	// 	// $.when( showMain() ).done(function() {
-	// 	//     $(".icon").hide('slow');
-	// 	//   });
-	// 	// mainEnd();
+    	$(".btn").hide('slow');
+    	$(".icon").show('slow');
+    	var mainEvents = arrTimes.filter(time => time.event == true);
+     	showMain(mainEvents);
 		
-        // alert(2);
         alert(goals);
     });
- //    function showMain(mainEvents){
- //    	mainEvents.forEach(function(element) {
-	// 	    $('.process').delay(2000).queue(function (next) {
-	// 		    $(this).append('<div>'+element.comment+'</div>');
-	// 		    console.log(element)
-	// 		    if(element.typeEvent == 'goal' && element.team == 'VN'){
-	// 		    	vn++;
-	// 		    	$(".spanVN").remove();
-	//     			$("#vn").append('<span class="spanVN">'+vn+'</span>');
-	// 		    }
-	// 		    if(element.typeEvent == 'goal' && element.team == 'UZB'){
-	// 		    	uzb++;
-	// 		    	$(".spanUZB").remove('span');
-	//     			$("#uzb").append('<span class="spanUZB">'+uzb+'</span>');
-	// 		    }
-	// 		    if(element.minute == 90){
-	// 		    	$(".icon").hide('slow');
-	// 		    }
-	// 		    next();
-	// 		});
-	// 		return true;
-	// 	});
- //    }
+    function showMain(mainEvents){
+    	mainEvents.forEach(function(element) {
+		    $('.process').delay(2000).queue(function (next) {
+			    $(this).append('<div>'+element.comment+'</div>');
+			    console.log(element)
+			    if(element.typeEvent == 'goal' && element.team == 'VN'){
+			    	vn++;
+			    	$(".spanVN").remove();
+	    			$("#vn").append('<span class="spanVN">'+vn+'</span>');
+			    }
+			    if(element.typeEvent == 'goal' && element.team == 'UZB'){
+			    	uzb++;
+			    	$(".spanUZB").remove('span');
+	    			$("#uzb").append('<span class="spanUZB">'+uzb+'</span>');
+			    }
+			    if(element.minute == 90){
+			    	$(".icon").hide('slow');
+			    }
+			    next();
+			});
+			return true;
+		});
+    }
 
     function addEvent(){
     	alert('add');
