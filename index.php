@@ -27,7 +27,7 @@
 			</div>
 		</div>
 		<div class="body">
-			<button class="btn" >Bắt đầu</button>
+			<button class="btn" >Bắt đầu trận đấu</button>
 			<div class="process">
 				
 			</div>
@@ -38,8 +38,6 @@
 	</div>
 </body>
 <footer>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<script src="js/jquery.js"></script>
 	<script src="app.js"></script>
 </footer>
