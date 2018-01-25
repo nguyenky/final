@@ -60,32 +60,32 @@ $(document).ready(function(){
     	$(".btn").hide('slow');
     	$(".icon").show('slow');
     	// var mainEvents = arrTimes.filter(time => time.event == true);
-     	// showMain(mainEvents);
+     	showMain(arrTimes);
 		
         alert(goals);
     });
-  //   function showMain(mainEvents){
-  //   	mainEvents.forEach(function(element) {
-		//     $('.process').delay(2000).queue(function (next) {
-		// 	    $(this).append('<div>'+element.comment+'</div>');
-		// 	    console.log(element)
-		// 	    if(element.typeEvent == 'goal' && element.team == 'VN'){
-		// 	    	vn++;
-		// 	    	$(".spanVN").remove();
-	 //    			$("#vn").append('<span class="spanVN">'+vn+'</span>');
-		// 	    }
-		// 	    if(element.typeEvent == 'goal' && element.team == 'UZB'){
-		// 	    	uzb++;
-		// 	    	$(".spanUZB").remove('span');
-	 //    			$("#uzb").append('<span class="spanUZB">'+uzb+'</span>');
-		// 	    }
-		// 	    if(element.minute == 90){
-		// 	    	$(".icon").hide('slow');
-		// 	    }
-		// 	    next();
-		// 	});
-		// });
-  //   }
+    function showMain(mainEvents){
+    	mainEvents.forEach(function(element) {
+		    $('.process').delay(2000).queue(function (next) {
+			    $(this).append('<div>'+element.comment+'</div>');
+			    console.log(element)
+			    if(element.typeEvent == 'goal' && element.team == 'VN'){
+			    	vn++;
+			    	$(".spanVN").remove();
+	    			$("#vn").append('<span class="spanVN">'+vn+'</span>');
+			    }
+			    if(element.typeEvent == 'goal' && element.team == 'UZB'){
+			    	uzb++;
+			    	$(".spanUZB").remove('span');
+	    			$("#uzb").append('<span class="spanUZB">'+uzb+'</span>');
+			    }
+			    if(element.minute == 90){
+			    	$(".icon").hide('slow');
+			    }
+			    next();
+			});
+		});
+    }
 
     function addEvent(){
     	alert('add');
