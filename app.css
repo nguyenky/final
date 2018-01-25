@@ -1,7 +1,7 @@
 
 body {
 	background-color: #ffffff;
-	padding: 5px 40px 5px 40px;
+	padding: 5px 20px 5px 20px;
 }
 .header{
 	display: flex;
@@ -66,4 +66,10 @@ body {
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
   cursor: pointer;
+}
+.icon{
+	align-items: center;
+}
+.icon img {
+	width: 200px;
 }
