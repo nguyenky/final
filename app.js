@@ -59,7 +59,7 @@ $(document).ready(function(){
     	addEvent();
     	$(".btn").hide('slow');
     	$(".icon").show('slow');
-    	var mainEvents = arrTimes.filter(time => time.event == true);
+    	// var mainEvents = arrTimes.filter(time => time.event == true);
      	// showMain(mainEvents);
 		
         alert(goals);
