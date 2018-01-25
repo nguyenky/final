@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	alert(1);
+	// alert(1);
 	//---------------------
 
 	var vn 	= 0;
@@ -54,17 +54,22 @@ $(document).ready(function(){
 	$(".icon").hide();
 
     $(".btn").click(function(){
- //    	console.log(arrTimes);
- //    	// console.log(arrMinuteGoal.sort(sortNumberAsc));
     	addEvent();
     	$(".btn").hide('slow');
     	$(".icon").show('slow');
     	// var mainEvents = arrTimes.filter(time => time.event == true);
-     	showMain(arrTimes);
+    	var mainEvents =[];
+    	arrTimes.forEach(function(element){
+    		if(element.event){
+    			mainEvents.push(element);
+    		}
+    	})
+     	showMain(mainEvents);
 		
-        alert(goals);
+        // alert(goals);
     });
     function showMain(mainEvents){
+    	console.log(mainEvents);
     	mainEvents.forEach(function(element) {
 		    $('.process').delay(2000).queue(function (next) {
 			    $(this).append('<div>'+element.comment+'</div>');
@@ -88,7 +93,7 @@ $(document).ready(function(){
     }
 
     function addEvent(){
-    	alert('add');
+    	// alert('add');
     	arrMinuteGoal.sort(sortNumberAsc).forEach(function(value){
 	    	console.log(arrTimes[value]);
 	    	arrTimes[value].event = true;
@@ -109,6 +114,6 @@ $(document).ready(function(){
 	    });
 	    arrTimes[90].event 		= true;
 	    arrTimes[90].comment 	='End';
-	    alert('end add');
+	    // alert('end add');
     }
 });
