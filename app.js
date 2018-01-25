@@ -35,7 +35,7 @@
 
 
 $(document).ready(function(){
-
+	alert(1);
 	//---------------------
 
 	var vn 	= 0;
