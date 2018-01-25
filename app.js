@@ -95,25 +95,26 @@ $(document).ready(function(){
 
     function addEvent(){
     	alert('add');
- //    	arrMinuteGoal.sort(sortNumberAsc).forEach(function(value){
-	//     	console.log(arrTimes[value]);
-	//     	arrTimes[value].event = true;
-	//     	arrTimes[value].typeEvent = 'goal';
-	//     	rand = Boolean(Math.round(Math.random()));
-	//     	if(rand){
-	//     		arrTimes[value].team = 'VN';
-	//     		// arrTimes[value].player1 = playerTopVN[Math.floor(Math.random()*playerTopVN.length)];
-	//     		arrTimes[value].comment = playerTopVN[Math.floor(Math.random()*playerTopVN.length)]+' đã ghi bàn !!';
+    	arrMinuteGoal.sort(sortNumberAsc).forEach(function(value){
+	    	console.log(arrTimes[value]);
+	    	arrTimes[value].event = true;
+	    	arrTimes[value].typeEvent = 'goal';
+	    	rand = Boolean(Math.round(Math.random()));
+	    	if(rand){
+	    		arrTimes[value].team = 'VN';
+	    		// arrTimes[value].player1 = playerTopVN[Math.floor(Math.random()*playerTopVN.length)];
+	    		arrTimes[value].comment = playerTopVN[Math.floor(Math.random()*playerTopVN.length)]+' đã ghi bàn !!';
 	    		
 
-	//     	}else{
+	    	}else{
 	    		
-	//     		arrTimes[value].team = 'UZB';
-	//     		arrTimes[value].comment = playerTopUzb[Math.floor(Math.random()*playerTopUzb.length)]+' đã ghi bàn !!';
+	    		arrTimes[value].team = 'UZB';
+	    		arrTimes[value].comment = playerTopUzb[Math.floor(Math.random()*playerTopUzb.length)]+' đã ghi bàn !!';
 	    		
-	//     	}
-	//     });
-	//     arrTimes[90].event 		=true;
-	//     arrTimes[90].comment 	='End';
+	    	}
+	    });
+	    arrTimes[90].event 		= true;
+	    arrTimes[90].comment 	='End';
+	    alert('end add');
     }
 });
