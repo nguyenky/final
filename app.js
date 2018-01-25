@@ -2,48 +2,48 @@ $(document).ready(function(){
 	alert(1);
 	//---------------------
 
-	// var vn 	= 0;
-	// var uzb = 0;
-	// var times = 91;
-	// var arrTimes = [];
+	var vn 	= 0;
+	var uzb = 0;
+	var times = 91;
+	var arrTimes = [];
 
-	// var playerTopVN 	= ['Văn Toàn','Công Phượng','Quang Hải','Quang Hải','Đức Chinh','Đức Chinh','Hồng Duy'];
+	var playerTopVN 	= ['Văn Toàn','Công Phượng','Quang Hải','Quang Hải','Đức Chinh','Đức Chinh','Hồng Duy'];
 
-	// // var item = playerTopVN[Math.floor(Math.random()*playerTopVN.length)];
+	// var item = playerTopVN[Math.floor(Math.random()*playerTopVN.length)];
 
-	// var playerBotVN 	= ['Xuân Mạnh','Đình Trọng','Duy Mạnh','Tiến Dũng','Văn Thanh','Hồng Duy','Đức Huy'];
-	// var playerGoalieVN  = 'Soái Ca Bùi Tiến Dũng';
+	var playerBotVN 	= ['Xuân Mạnh','Đình Trọng','Duy Mạnh','Tiến Dũng','Văn Thanh','Hồng Duy','Đức Huy'];
+	var playerGoalieVN  = 'Soái Ca Bùi Tiến Dũng';
 
-	// var playerTopUzb	= ['Messi of Uzbekistan','Ronaldo of of Uzbekistan','Torres of Uzbekistan','Neymar of Uzbekistan','Welbeck of Uzbekistan'];
-	// var playerBotUzb	= ['Vidic of Uzbekistan','Rio Ferdinand of Uzbekistan','Ramos of Uzbekistan','Pepe of Uzbekistan'];
+	var playerTopUzb	= ['Messi of Uzbekistan','Ronaldo of of Uzbekistan','Torres of Uzbekistan','Neymar of Uzbekistan','Welbeck of Uzbekistan'];
+	var playerBotUzb	= ['Vidic of Uzbekistan','Rio Ferdinand of Uzbekistan','Ramos of Uzbekistan','Pepe of Uzbekistan'];
 
-	// for(var i = 0;i<times;i++){
-	// 	var obTime = {
-	// 		minute:i,
-	// 		event:false,
-	// 		player1:null,
-	// 		player2:null,
-	// 		typeEvent:null,
-	// 		comment:null,
-	// 		team:null,
-	// 	};
-	// 	arrTimes.push(obTime);
+	for(var i = 0;i<times;i++){
+		var obTime = {
+			minute:i,
+			event:false,
+			player1:null,
+			player2:null,
+			typeEvent:null,
+			comment:null,
+			team:null,
+		};
+		arrTimes.push(obTime);
 
-	// }
+	}
 
-	// var goals = Math.floor(Math.random() * 7);
+	var goals = Math.floor(Math.random() * 7);
 
-	// var arrMinuteGoal = [];
+	var arrMinuteGoal = [];
 
-	// for(var i = 0;i<goals;i++){
+	for(var i = 0;i<goals;i++){
 
-	// 	arrMinuteGoal.push(Math.floor(Math.random() * 90));
+		arrMinuteGoal.push(Math.floor(Math.random() * 90));
 
-	// }
+	}
 
-	// function sortNumberAsc(a, b){
- //        return a - b;
- //    }
+	function sortNumberAsc(a, b){
+        return a - b;
+    }
 
     
 
@@ -67,6 +67,7 @@ $(document).ready(function(){
 	// 	// mainEnd();
 		
         alert(2);
+        alert(goals);
     });
  //    function showMain(mainEvents){
  //    	mainEvents.forEach(function(element) {
