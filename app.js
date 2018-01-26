@@ -71,6 +71,7 @@ $(document).ready(function(){
      	showMain(mainEvents);
 		
         // alert(goals);
+        count();
     });
     function showMain(mainEvents){
     	// console.log(mainEvents);
@@ -461,5 +462,9 @@ $(document).ready(function(){
 
     function moveBottom(){
     	$("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
+    }
+    function count(){
+    	// https://nguyenkyshop.herokuapp.com/count
+    	
     }
 });

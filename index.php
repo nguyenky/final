@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>VIET-NAM</title>
 	
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="app.css">
+	<link rel="icon" type="image/x-icon" class="" href="image/icon.png">
 </head>
 <body>
 	<div id="myApp">
