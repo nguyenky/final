@@ -17,7 +17,7 @@ $(document).ready(function(){
 	var playerTopUzb	= ['Messi of Uzbekistan','Ronaldo of of Uzbekistan','Torres of Uzbekistan','Neymar of Uzbekistan','Welbeck of Uzbekistan'];
 	var playerBotUzb	= ['Vidic of Uzbekistan','Rio Ferdinand of Uzbekistan','Ramos of Uzbekistan','Pepe of Uzbekistan'];
 
-	var commentVNWin 		= ['VÀOOOOOOOOoooooooooooo.... Quang Hải, chính là Quang Hải đã ghi bàn đưa Việt Nam vươn lên dẫn trước !!!! Tuyệt vời','VÀOOOOOOOOoooooooooooo.... Công Phượng, chính là Công Phượng đã ghi bàn đưa Việt Nam vươn lên dẫn trước !!!! Thật tuyệt vời, xin chúc mừng !!','1..2 ...3 ...4 Quang Hải đã đi bóng qua 1 rừng cầu thủ đội bạn..VÀOOOOOOO.... Việt Nam đã vươn lên dẫn trước !!!'];
+	var commentVNWin 		= ['VÀOOOOOOOOoooooooooooo.... Quang Hải, chính là Quang Hải đã ghi bàn đưa Việt Nam vươn lên dẫn trước !!!! Tuyệt vời','VÀOOOOOOOOoooooooooooo.... Công Phượng, chính là Công Phượng đã ghi bàn đưa Việt Nam vươn lên dẫn trước !!!! Thật tuyệt vời, xin chúc mừng !!','1..2 ...3 ...4 Quang Hải đã đi bóng qua 1 rừng cầu thủ đội bạn..VÀOOOOOOO.... Việt Nam đã vươn lên dẫn trước !!!','Vàoooooooooooooo...1 pha lừa bóng rất kỷ viện, à không rất kỷ thuật của Công Phượng qua 2 hậu vệ và sút tung nóc lưới U23 Uzbekistan'];
 	var commentVNBalance 	= ['Xuất sắc !! Đức Chinh đã bay người đánh đầu gỡ hòa cho U23 Việt Nam !!!','Vàoooooooooo.... 1 cú volley trái phá ... Xuân Trường đã gỡ san bằng tỉ số cho U23 Việt Nammmmmm !!! ',' Lại 1 pha solo của Messi.. à không, đó là Quang Hải qua 1 rừng cầu thủ phòng ngự của đội bạn để ghi bàn gở hòa cho tuyển U23 Việt Nam !!!','Xuất sắc !! Văn Toàn đã bay người đánh đầu gỡ hòa cho U23 Việt Nam !!!','Vàoooooooooo.... 1 cú volley trái phá ... Văn Đức đã gỡ san bằng tỉ số cho U23 Việt Nammmmmm !!! '];
 	for(var i = 0;i<times;i++){
 		var obTime = {
@@ -75,7 +75,7 @@ $(document).ready(function(){
     function showMain(mainEvents){
     	// console.log(mainEvents);
     	mainEvents.forEach(function(element) {
-		    $('.process').delay(2500).queue(function (next) {
+		    $('.process').delay(3500).queue(function (next) {
 			    
 			    console.log(element)
 			    if(element.typeEvent == 'goal' && element.team == 'VN'){
@@ -249,7 +249,7 @@ $(document).ready(function(){
     	})
 	    // console.log(arrTimesExtra);
      	mainEventsExtra.forEach(function(element) {
-		    $('.process').delay(2500).queue(function (next) {
+		    $('.process').delay(3500).queue(function (next) {
 			    
 			    // console.log(element)
 			    if(element.typeEvent == 'goal' && element.team == 'VN'){
@@ -421,7 +421,7 @@ $(document).ready(function(){
 	    arrPen[10].comment 	='Trận đấu kết thúc !';
 		// console.log(arrPen);
     	arrPen.forEach(function(element) {
-		    $('.process').delay(2500).queue(function (next) {
+		    $('.process').delay(3500).queue(function (next) {
 		    	if(element.times % 2 == 0 && element.goal){
 		    		vnPen++;
 		    		// element.comment = "Vào"
