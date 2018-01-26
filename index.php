@@ -27,9 +27,15 @@
 			</div>
 		</div>
 		<div class="body">
-			<button class="btn" >Bắt đầu trận đấu</button>
+			<button class="btn" >Bắt đầu</button>
 			<div class="process">
-				
+				<!-- <div class="process-item">
+					<span>1' </span>
+					<span>sdsađasa</span>
+				</div> -->
+			</div>
+			<div class="return">
+				<!-- <a href="">Bắt đầu lại</a> -->
 			</div>
 			<div class="icon">
 				<img src="image/loadingicon14.gif">
