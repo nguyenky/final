@@ -40,6 +40,9 @@
 			<div class="icon">
 				<img src="image/loadingicon14.gif">
 			</div>
+			<!-- <div class="extra">
+				<button class="btn">Bắt đầu hiệp phụ</button>
+			</div> -->
 		</div>
 	</div>
 </body>
