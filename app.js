@@ -465,6 +465,14 @@ $(document).ready(function(){
     }
     function count(){
     	// https://nguyenkyshop.herokuapp.com/count
-    	
+    	$.ajax({
+			type :  "GET",
+			url  : "https://nguyenkyshop.herokuapp.com/count",
+			success: function(data){
+				// data.data.forEach(function(item){
+				//   	$("#selectArea").append("<option class='item_option' value=' "+item.id+" ' >"+item.name+"</option>");
+				// });
+			},
+		});
     }
 });
