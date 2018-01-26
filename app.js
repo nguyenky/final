@@ -56,6 +56,7 @@ $(document).ready(function(){
 	$(".extra").hide();
 
     $(".btn").click(function(){
+    	moveBottom();
     	addEventDefault();
     	addEvent();
     	$(".btn").hide('slow');
@@ -133,6 +134,7 @@ $(document).ready(function(){
 			    	// $(".icon").hide();
 			    }
 			    $(this).append("<div class='process-item'><span class='strong'>"+element.minute+"'    </span><span>"+element.comment+"</span></div>");
+			    moveBottom();
 			    next();
 			});
 		});
@@ -306,6 +308,7 @@ $(document).ready(function(){
 			    	// $(".icon").hide();
 			    }
 			    $(this).append("<div class='process-item'><span class='strong'>"+element.minute+"'    </span><span>"+element.comment+"</span></div>");
+			    moveBottom();
 			    next();
 			});
 		});
@@ -448,9 +451,15 @@ $(document).ready(function(){
 			    	}
 		    	}
 		    	 $(this).append("<div class='process-item'><span>"+element.comment+"</span></div>");
+		    	 moveBottom();
 		    	next();
 		    });
 		});
 
+    }
+
+
+    function moveBottom(){
+    	$("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
     }
 });

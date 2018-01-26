@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="app.css">
 </head>
 <body>
-	<div>
+	<div id="myApp">
 		<div class="header">
 			<div class="header-item">
 				<div class="image">
